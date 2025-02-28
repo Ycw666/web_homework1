@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Emirates</title>
-    <stlye>
-<!--        容器 box 高度100vh flex排版方向column 置中-->
+    <style>
+        /* 容器 box 高度 100vh，flex 排版方向 column 置中 */
         .container {
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
-<!--        容器樣式 背景顏色-->
-        .container {
-            background-color: #f3f3f3;
-        }
-<!--        標題 box 寬度100% 上方間距5em-->
-        .title {
-            width: 100%;
-            margin-top: 5em;
+            background-color: #FFFFFF; /* 背景顏色 */
         }
 
+        /*標題 box  底部0 貼緊右邊 縮小百分之50*/
+        .title-bottom {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 25%;
+            height: 100px;
+        }
+        /*標題2 box 頂部0 距離左邊50px*/
+        .title-top {
+            position: absolute;
+            top: 0;
+            left: 80px;
+            height: 200px;
+        }
 
-    </stlye>
+    </style>
 </head>
-
 <body>
 
-<img class="title" src="imgs/1.png.webp" alt="Emirates">
+<div class="container">
+    <img class="title-bottom" src="imgs/1.png.webp" alt="Emirates">
+    <img class="title-top" src="imgs/Unknown.png" alt="Emirates">
+</div>
 
 </body>
 </html>
